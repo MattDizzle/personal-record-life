@@ -10,6 +10,11 @@ export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
 
+  console.log("Yo I'm a mobile App developer!")
+
+  // let x
+  // ajdbflkjasbdflkjhaslkdjfh
+
   if (!isLoadingComplete) {
     return null;
   } else {
