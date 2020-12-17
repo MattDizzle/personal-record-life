@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StyleSheet, TextInput, Button, Alert  } from 'react-native';
 
-import EditScreenInfo from '../components/EditScreenInfo';
+// import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
 export default function TabOneScreen() {
@@ -16,17 +16,12 @@ export default function TabOneScreen() {
       <Text style={styles.title}>Retype Password </Text>
       <TextInput style={styles.username}/>
       <Button
-  onPress={() => Alert.alert('Button with adjusted color pressed')}
+  onPress={() => Alert.alert('This button works')}
   title="Let's set a new Record"
   color="#006400"
-  accessibilityLabel="Learn more about this purple button"
-  
+  accessibilityLabel="Submit new user information"
 />
-
-
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabOneScreen.tsx" />
-    </View>
+</View>
   );
 }
 

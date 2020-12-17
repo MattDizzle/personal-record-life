@@ -8,12 +8,12 @@ export default {
         screens: {
           TabOne: {
             screens: {
-              TabOneScreen: 'start',
+              TabOneScreen: 'signup',
             },
           },
           TabTwo: {
             screens: {
-              TabTwoScreen: 'create-user',
+              TabTwoScreen: 'login',
             },
           },
         },
