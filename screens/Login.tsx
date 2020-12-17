@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { StyleSheet, TextInput, Button, Alert, ImageBackground } from 'react-native';
-
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import bgImage from '../assets/images/BG1.jpg'
@@ -42,7 +41,7 @@ const styles = StyleSheet.create({
   username: {
     height: 50,
     width: 250,
-    backgroundColor: 'lightgrey',
+    backgroundColor: '#64B5F6',
   },
   btn: {
     backgroundColor: 'green'

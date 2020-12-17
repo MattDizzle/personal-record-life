@@ -1,11 +1,13 @@
 import * as React from 'react';
-import { StyleSheet, TextInput, Button, Alert  } from 'react-native';
+import { StyleSheet, TextInput, Button, Alert, ImageBackground  } from 'react-native';
 
 // import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
+import bgImage from '../assets/images/BG1.jpg'
 
 export default function TabOneScreen() {
   return (
+    <ImageBackground source={bgImage} style={styles.backgroundContainer}>
     <View style={styles.container}>
       <Text style={styles.title}>Create a Username</Text>
       <TextInput style={styles.username}/>
@@ -22,6 +24,7 @@ export default function TabOneScreen() {
   accessibilityLabel="Submit new user information"
 />
 </View>
+</ImageBackground>
   );
 }
 
@@ -47,5 +50,10 @@ const styles = StyleSheet.create({
   },
   btn: {
     backgroundColor: 'green'
+  },
+  backgroundContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 });
