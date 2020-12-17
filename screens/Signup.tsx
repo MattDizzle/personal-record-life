@@ -3,7 +3,7 @@ import { StyleSheet, TextInput, Button, Alert, ImageBackground  } from 'react-na
 
 // import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
-import bgImage from '../assets/images/BG1.jpg'
+import bgImage from '../assets/images/yLOOp.jpg'
 
 export default function TabOneScreen() {
   return (
