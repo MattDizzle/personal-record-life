@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, TextInput, Button  } from 'react-native';
+import { StyleSheet, TextInput, Button, Alert  } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
@@ -16,7 +16,7 @@ export default function TabOneScreen() {
       <Text style={styles.title}>Retype Password </Text>
       <TextInput style={styles.username}/>
       <Button
-  // onPress={}
+  onPress={() => Alert.alert('Button with adjusted color pressed')}
   title="Let's set a new Record"
   color="#006400"
   accessibilityLabel="Learn more about this purple button"
