@@ -3,7 +3,7 @@ import { StyleSheet, TextInput, Button, Alert, ImageBackground, Image } from 're
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import bgImage from '../assets/images/yLOOp.jpg';
-import PRlogo from '../assets/images/PRLogo1.png';
+import PRlogo from '../assets/images/PRLogo1white.png';
 
 export default function TabTwoScreen() {
   return (
@@ -15,7 +15,7 @@ export default function TabTwoScreen() {
           uri: 'https://github.com/MattDizzle/favicon-host/blob/master/PRLife/PRLogo1.png?raw=true',
         }}
       /> */}
-      <Image source={PRlogo} />
+      <Image source={PRlogo} style={styles.logo}/>
       <Text style={styles.title}>Enter Username or email</Text>
       <TextInput style={styles.username}/>
       <Text style={styles.title}>Password </Text>
@@ -60,7 +60,8 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logo: {
-    width: 40,
-    height: 40,
+    width: 100,
+    height: 100,
+    marginBottom: 10,
   }
 });
