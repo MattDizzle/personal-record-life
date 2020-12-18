@@ -5,7 +5,7 @@ import { StyleSheet, TextInput, Button, Alert, ImageBackground  } from 'react-na
 import { Text, View } from '../components/Themed';
 import bgImage from '../assets/images/BG1.jpg'
 
-export default function TabOneScreen() {
+export default function Signup() {
   return (
     <ImageBackground source={bgImage} style={styles.backgroundContainer}>
     <View style={styles.container}>
