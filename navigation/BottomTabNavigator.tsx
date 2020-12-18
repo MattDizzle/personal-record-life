@@ -22,14 +22,14 @@ export default function BottomTabNavigator() {
         name="Signup"
         component={SignupNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="person-add-outline" color={color} />,
         }}
       />
       <BottomTab.Screen
         name="Login"
         component={LoginNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="person-outline" color={color} />,
         }}
       />
     </BottomTab.Navigator>
