@@ -7,7 +7,7 @@ import bgImage from '../assets/images/yLOOp.jpg'
 import PRlogo from '../assets/images/PRLogo1white.png';
 
 
-export default function TabOneScreen() {
+export default function Signup() {
   return (
     <ImageBackground source={bgImage} style={styles.backgroundContainer}>
     <View style={styles.container}>
