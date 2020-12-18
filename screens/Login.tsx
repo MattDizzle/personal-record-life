@@ -2,14 +2,20 @@ import * as React from 'react';
 import { StyleSheet, TextInput, Button, Alert, ImageBackground, Image } from 'react-native';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
-import bgImage from '../assets/images/yLOOp.jpg'
-import logo from '../assets/images/PRLogo.png'
+import bgImage from '../assets/images/yLOOp.jpg';
+import PRlogo from '../assets/images/PRLogo1.png';
 
 export default function TabTwoScreen() {
   return (
     <ImageBackground source={bgImage} style={styles.backgroundContainer}>
     <View style={styles.container}>
-      <Image source={require('@expo/snack-static/react-native-logo.png')} />
+    {/* <Image
+        style={styles.logo}
+        source={{
+          uri: 'https://github.com/MattDizzle/favicon-host/blob/master/PRLife/PRLogo1.png?raw=true',
+        }}
+      /> */}
+      <Image source={PRlogo} />
       <Text style={styles.title}>Enter Username or email</Text>
       <TextInput style={styles.username}/>
       <Text style={styles.title}>Password </Text>
@@ -52,5 +58,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  logo: {
+    width: 40,
+    height: 40,
   }
 });
