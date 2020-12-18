@@ -1,13 +1,15 @@
 import * as React from 'react';
-import { StyleSheet, TextInput, Button, Alert, ImageBackground } from 'react-native';
+import { StyleSheet, TextInput, Button, Alert, ImageBackground, Image } from 'react-native';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import bgImage from '../assets/images/yLOOp.jpg'
+import logo from '../assets/images/PRLogo.png'
 
 export default function TabTwoScreen() {
   return (
     <ImageBackground source={bgImage} style={styles.backgroundContainer}>
     <View style={styles.container}>
+      <Image source={require('@expo/snack-static/react-native-logo.png')} />
       <Text style={styles.title}>Enter Username or email</Text>
       <TextInput style={styles.username}/>
       <Text style={styles.title}>Password </Text>
