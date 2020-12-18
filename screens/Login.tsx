@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   username: {
     height: 50,
     width: 250,
-    backgroundColor: '#64B5F6',
+    backgroundColor: 'lightgrey',
   },
   btn: {
     backgroundColor: 'green',
