@@ -1,20 +1,33 @@
 import * as React from 'react';
+<<<<<<< HEAD
 import { StyleSheet, TextInput, Button, Alert, ImageBackground } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import EditScreenInfo from '../components/EditScreenInfo';
+=======
+import { StyleSheet, TextInput, Button, Alert, ImageBackground, Image } from 'react-native';
+>>>>>>> 14662e99bca6a880d4ff3c0f25fc63d85b09697f
 import { Text, View } from '../components/Themed';
-import bgImage from '../assets/images/BG1.jpg'
+import bgImage from '../assets/images/yLOOp.jpg';
+import PRlogo from '../assets/images/PRLogo1white.png';
 
 const Login = ({navigation}) => {
   return (
     <ImageBackground source={bgImage} style={styles.backgroundContainer}>
     <View style={styles.container}>
-      <Text style={styles.title}>Enter Username or email</Text>
+    {/* <Image
+        style={styles.logo}
+        source={{
+          uri: 'https://github.com/MattDizzle/favicon-host/blob/master/PRLife/PRLogo1.png?raw=true',
+        }}
+      /> */}
+      <Image source={PRlogo} style={styles.logo}/>
+      <Text style={styles.title} >Enter Username or email</Text>
       <TextInput style={styles.username}/>
       <Text style={styles.title}>Password </Text>
       <TextInput style={styles.username}/>
       <Button
+      
   onPress={() => Alert.alert('This button works')}
   title="Let's set a new Record"
   color="#006400"
@@ -48,14 +61,20 @@ const styles = StyleSheet.create({
   username: {
     height: 50,
     width: 250,
-    backgroundColor: '#64B5F6',
+    backgroundColor: 'lightgrey',
   },
   btn: {
-    backgroundColor: 'green'
+    backgroundColor: 'green',
+    marginTop: 10,
   },
   backgroundContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  logo: {
+    width: 100,
+    height: 100,
+    marginBottom: 10,
   }
 });

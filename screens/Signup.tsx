@@ -1,14 +1,17 @@
 import * as React from 'react';
-import { StyleSheet, TextInput, Button, Alert, ImageBackground  } from 'react-native';
+import { StyleSheet, TextInput, Button, Alert, ImageBackground, Image  } from 'react-native';
 
 // import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
-import bgImage from '../assets/images/BG1.jpg'
+import bgImage from '../assets/images/yLOOp.jpg'
+import PRlogo from '../assets/images/PRLogo1white.png';
+
 
 export default function Signup() {
   return (
     <ImageBackground source={bgImage} style={styles.backgroundContainer}>
     <View style={styles.container}>
+    <Image source={PRlogo} style={styles.logo}/>
       <Text style={styles.title}>Create a Username</Text>
       <TextInput style={styles.username}/>
       <Text style={styles.title}>Enter your email </Text>
@@ -55,5 +58,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  logo: {
+    width: 100,
+    height: 100,
+    marginBottom: 10,
   }
 });
