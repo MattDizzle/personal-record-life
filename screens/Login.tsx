@@ -1,5 +1,6 @@
 import * as React from 'react';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { StyleSheet, TextInput, Button, Alert, ImageBackground, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -11,6 +12,12 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import EditScreenInfo from '../components/EditScreenInfo';
 
+>>>>>>> fixes
+=======
+import { StyleSheet, TextInput, Button, Alert, ImageBackground, Image } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import EditScreenInfo from '../components/EditScreenInfo';
 >>>>>>> fixes
 import { Text, View } from '../components/Themed';
 import bgImage from '../assets/images/yLOOp.jpg';
