@@ -1,12 +1,10 @@
 import * as React from 'react';
-<<<<<<< HEAD
+
 import { StyleSheet, TextInput, Button, Alert, ImageBackground } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import EditScreenInfo from '../components/EditScreenInfo';
-=======
-import { StyleSheet, TextInput, Button, Alert, ImageBackground, Image } from 'react-native';
->>>>>>> 14662e99bca6a880d4ff3c0f25fc63d85b09697f
+
 import { Text, View } from '../components/Themed';
 import bgImage from '../assets/images/yLOOp.jpg';
 import PRlogo from '../assets/images/PRLogo1white.png';
