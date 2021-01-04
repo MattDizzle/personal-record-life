@@ -5,5 +5,7 @@ import { StyleSheet, TextInput, Button, Alert, ImageBackground  } from 'react-na
 import { Text, View } from '../components/Themed';
 
 export default function Dashboard() {
+    return(
     <Text>This is the Dashboard</Text>
+    )
 }
