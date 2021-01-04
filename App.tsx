@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import Login from './screens/Login'
 import Signup from './screens/Signup'
+import Dashboard from './screens/Dashboard'
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StyleSheet, ImageBackground } from 'react-native';
 
@@ -32,6 +33,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignUp" component={Signup} />
+        <Stack.Screen name="Dashboard" component={Dashboard} />
       </Stack.Navigator>
     </NavigationContainer>
     );
